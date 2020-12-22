@@ -1,0 +1,11 @@
+<div [ngClass]="setClasses()">
+  <p>
+    <input
+      (change)="updateStatus(todo)"
+      type="checkbox"
+      [checked]="todo.completed"
+    />
+    {{ todo.title }}
+    <button (click)="removeTodo(todo)" class="del">x</button>
+  </p>
+</div>
